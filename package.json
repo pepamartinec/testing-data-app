@@ -1,0 +1,12 @@
+{
+  "name": "testing-data-app",
+  "version": "1.0.0",
+  "description": "Simple app that renders request details for debugging",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
