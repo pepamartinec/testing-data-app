@@ -38,7 +38,7 @@ app.all('*', (req, res) => {
   </style>
 </head>
 <body>
-  <h1>🔍 Request Inspector</h1>
+  <h1>🔍 Request Inspector V3</h1>
 
   <h2>URL</h2>
   <div class="section">
