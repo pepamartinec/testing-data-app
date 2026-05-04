@@ -2,4 +2,4 @@
 set -Eeuo pipefail
 cd /app && npm install
 
-echo "PROD setup done"
+echo "DEV setup done"
