@@ -15,7 +15,7 @@ app.get('/__env', (req, res) => {
 
     const content = `
   <h2>Environment Variables</h2>
-  <h3>test2</h3>
+  <h3>test3</h3>
   <div class="section">
     ${rows ? `<table>${rows}</table>` : '<span class="empty">(none)</span>'}
   </div>`;
