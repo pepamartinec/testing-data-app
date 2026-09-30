@@ -34,6 +34,7 @@ function renderPage(activeTab, title, content) {
   <nav class="tabs">
     ${tab('inspector', '/', 'Request')}
     ${tab('env', '/__env', 'Environment')}
+    ${tab('sse', '/__sse', 'SSE Timeouts')}
   </nav>
   ${content}
 </body>

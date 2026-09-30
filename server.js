@@ -2,11 +2,15 @@
 
 const express = require('express');
 const { renderPage, esc } = require('./layout');
+const { createSse } = require('./sse');
 const app = express();
 const PORT = 3000;
 
 // Parse raw body as text for all content types
 app.use(express.text({ type: '*/*', limit: '10mb' }));
+
+const sse = createSse();
+app.use(sse.router);
 
 app.get('/__env', (req, res) => {
     const rows = Object.entries(process.env)
@@ -60,4 +64,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { app };
+module.exports = { app, sse };
